@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3b88934b8e837488268e6ce523e20e, type: 3}
+  m_Name: ChessPieceData
+  m_EditorClassIdentifier: 
+  ChessPieceInfos:
+  - ChessPieceName: King
+    ChessPieceSprite: {fileID: 4842974383721489020, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: White
+    ChessPieceArrangePlaces:
+    - xBoard: 4
+      yBoard: 0
+  - ChessPieceName: Queen
+    ChessPieceSprite: {fileID: 8239140532275945989, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: White
+    ChessPieceArrangePlaces:
+    - xBoard: 3
+      yBoard: 0
+  - ChessPieceName: Rook
+    ChessPieceSprite: {fileID: 2606153016120934048, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: White
+    ChessPieceArrangePlaces:
+    - xBoard: 0
+      yBoard: 0
+    - xBoard: 7
+      yBoard: 0
+  - ChessPieceName: Bishop
+    ChessPieceSprite: {fileID: -2925221628021560560, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: White
+    ChessPieceArrangePlaces:
+    - xBoard: 2
+      yBoard: 0
+    - xBoard: 5
+      yBoard: 0
+  - ChessPieceName: Knight
+    ChessPieceSprite: {fileID: -2647962682813126139, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: White
+    ChessPieceArrangePlaces:
+    - xBoard: 1
+      yBoard: 0
+    - xBoard: 6
+      yBoard: 0
+  - ChessPieceName: Pawn
+    ChessPieceSprite: {fileID: 8736564960913313170, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: White
+    ChessPieceArrangePlaces:
+    - xBoard: 0
+      yBoard: 1
+    - xBoard: 1
+      yBoard: 1
+    - xBoard: 2
+      yBoard: 1
+    - xBoard: 3
+      yBoard: 1
+    - xBoard: 4
+      yBoard: 1
+    - xBoard: 5
+      yBoard: 1
+    - xBoard: 6
+      yBoard: 1
+    - xBoard: 7
+      yBoard: 1
+  - ChessPieceName: King
+    ChessPieceSprite: {fileID: 6623963105415861948, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: Black
+    ChessPieceArrangePlaces:
+    - xBoard: 4
+      yBoard: 7
+  - ChessPieceName: Queen
+    ChessPieceSprite: {fileID: 4271928469194566216, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: Black
+    ChessPieceArrangePlaces:
+    - xBoard: 3
+      yBoard: 7
+  - ChessPieceName: Rook
+    ChessPieceSprite: {fileID: 5209222130277788377, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: Black
+    ChessPieceArrangePlaces:
+    - xBoard: 0
+      yBoard: 7
+    - xBoard: 7
+      yBoard: 7
+  - ChessPieceName: Bishop
+    ChessPieceSprite: {fileID: 205499288650012117, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: Black
+    ChessPieceArrangePlaces:
+    - xBoard: 2
+      yBoard: 7
+    - xBoard: 5
+      yBoard: 7
+  - ChessPieceName: Knight
+    ChessPieceSprite: {fileID: 7970158032838120485, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: Black
+    ChessPieceArrangePlaces:
+    - xBoard: 1
+      yBoard: 7
+    - xBoard: 6
+      yBoard: 7
+  - ChessPieceName: Pawn
+    ChessPieceSprite: {fileID: 24965338684803766, guid: 7f8d085c74701b943af2c901f538639e, type: 3}
+    ChessPieceColor: Black
+    ChessPieceArrangePlaces:
+    - xBoard: 0
+      yBoard: 6
+    - xBoard: 1
+      yBoard: 6
+    - xBoard: 2
+      yBoard: 6
+    - xBoard: 3
+      yBoard: 6
+    - xBoard: 4
+      yBoard: 6
+    - xBoard: 5
+      yBoard: 6
+    - xBoard: 6
+      yBoard: 6
+    - xBoard: 7
+      yBoard: 6
