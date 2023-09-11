@@ -68,17 +68,6 @@ public sealed class ChessBoardPlacementHandler : MonoBehaviour
         }
 
     }
-    public int GetIndex(int row, int col)
-    {
-        int currentID = row * _totalColumn + col;
-        return currentID;
-    }
-    public (int Row, int Column) GetRowColumn(int num)
-    {
-        int currentRow = num / _totalRow;
-        int currentColomn = num % _totalColumn;
-        return (currentRow, currentColomn);
-    }
     internal GameObject GetTile(int row, int column)
     {
         try
@@ -142,6 +131,7 @@ public sealed class ChessBoardPlacementHandler : MonoBehaviour
                     _playerPieceYBoard = yboard;
                     ChessSurroundMove(xboard, yboard);
                 }
+
                 else if (_chessPieceHandler[xboard, yboard].GetChessPieceName() == "Queen")
                 {
                     ClearHighlights();
@@ -155,6 +145,16 @@ public sealed class ChessBoardPlacementHandler : MonoBehaviour
                     ChessPieceMovesHighlight(-1, -1);
                     ChessPieceMovesHighlight(-1, 1);
                     ChessPieceMovesHighlight(1, -1);
+                }
+                else if (_chessPieceHandler[xboard, yboard].GetChessPieceName() == "Bishop")
+                {
+                    ClearHighlights();
+                    _playerPieceXBoard = xboard;
+                    _playerPieceYBoard = yboard;
+                    ChessPieceMovesHighlight(1, 1);
+                    ChessPieceMovesHighlight(1, -1);
+                    ChessPieceMovesHighlight(-1, 1);
+                    ChessPieceMovesHighlight(-1, -1);
                 }
                 else if (_chessPieceHandler[xboard, yboard].GetChessPieceName() == "Rook")
                 {
@@ -211,41 +211,6 @@ public sealed class ChessBoardPlacementHandler : MonoBehaviour
                 ChessPieceMoves(xboard, yboard, IsEnemy(xboard, yboard));
             }
         }
-    }
-    private bool PawnIsOnTheLeft(int row, int column)
-    {
-        if (GetIndex(row, column) % _totalColumn == 0)
-        {
-            return true;
-        }
-        return false;
-    }
-
-    private bool PawnIsOnTheRight(int row, int column)
-    {
-        if ((GetIndex(row, column) + 1) % _totalColumn == 0)
-        {
-            return true;
-        }
-        return false;
-    }
-
-    private bool PawnIsOnTheBottom(int row, int column)
-    {
-        if (GetIndex(row, column) < _totalColumn)
-        {
-            return true;
-        }
-        return false;
-    }
-
-    private bool PawnIsOnTheTop(int row, int column)
-    {
-        if (GetIndex(row, column) >= (_totalColumn * (_totalRow - 1)))
-        {
-            return true;
-        }
-        return false;
     }
     public void ChessPieceMoves(int x, int y, bool isEnemy = false)
     {
